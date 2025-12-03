@@ -1,0 +1,3 @@
+[submodule ".scripts/vue-deploy-sh"]
+	path = .scripts/vue-deploy-sh
+	url = git@git.unistra.fr:dip/deploy/vue-deploy-sh.git
