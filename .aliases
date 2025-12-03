@@ -1,0 +1,17 @@
+# Poetry
+alias po="poetry"
+alias por="po run"
+alias porp="por python3"
+
+# Python
+alias manage="porp manage.py"
+
+# Jetbrains
+alias ch="pycharm1 . > /dev/null 2>&1 &"
+alias ws="webstorm . > /dev/null 2>&1 &"
+
+# cd
+alias cdeplf="cd ~/code/eplouribousse/eplfront"
+alias cdeplb="cd ~/code/eplouribousse/eplback"
+
+

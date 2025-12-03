@@ -1,0 +1,4 @@
+source "$HOME/.scripts/vue-deploy-sh/deploy.sh"
+
+# Deploy on django servers
+alias fab='docker run --rm -it -v "$HOME/.ssh/":"/home/pydiploy/.ssh/" -v $SSH_AUTH_SOCK:$SSH_AUTH_SOCK -e SSH_AUTH_SOCK=$SSH_AUTH_SOCK -v $HOME/.sentryclirc:/home/pydiploy/.sentryclirc -v "$PWD":/usr/src/app --user $(id -u) pydiploy fab'
