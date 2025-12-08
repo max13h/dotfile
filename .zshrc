@@ -18,7 +18,7 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(atuin init zsh)"
 
 # Apparmor 
-APPARMOR_MARKER="$HOME/.apparmor_started"
+APPARMOR_MARKER="/tmp/.apparmor_started"
 if [ ! -f "$APPARMOR_MARKER" ]; then
     echo "Run apparmor:"
     if sudo systemctl start apparmor 2>/dev/null; then
