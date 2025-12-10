@@ -25,3 +25,11 @@ if [ ! -f "$APPARMOR_MARKER" ]; then
         touch "$APPARMOR_MARKER"
     fi
 fi
+
+# pnpm
+export PNPM_HOME="/home/mhmae@ad.unistra.fr/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
